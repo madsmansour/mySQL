@@ -1,16 +1,21 @@
 var mysql = require('mysql2');
+var settings = require('./settings')
 
 var con = mysql.createConnection({
-  host: "192.168.99.101",
-  user: "root",
-  password: "mads"
+  host = settings.host,
+  user = settings.host,
+  password = settings.password
 });
 
+createDB = () =>
+{
 con.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
-    con.query("CREATE DATABASE madsdb", function (err, result) {
+    con.query("CREATE DATABASE databaseKunder", function (err, result) {
       if (err) throw err;
       console.log("Database created");
     });
   });
+}
+module.exports = createDB;

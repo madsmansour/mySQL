@@ -1,9 +1,10 @@
 var mysql = require('mysql2');
+var settings = require('./settings')
 
 var con = mysql.createConnection({
-  host: "192.168.99.101",
-  user: "root",
-  password: "mads"
+  host = settings.host,
+  user = settings.host,
+  password = settings.password
 });
 
 
