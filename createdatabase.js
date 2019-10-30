@@ -3,7 +3,7 @@ var settings = require('./settings')
 
 var con = mysql.createConnection({
   host = settings.host,
-  user = settings.host,
+  user = settings.user,
   password = settings.password
 });
 
