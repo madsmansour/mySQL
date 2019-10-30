@@ -2,9 +2,9 @@ var mysql = require('mysql2');
 var settings = require('./settings')
 
 var con = mysql.createConnection({
-  host = settings.host,
-  user = settings.user,
-  password = settings.password
+  "host": settings.host,
+  "user": settings.user,
+  "password": settings.password
 });
 
 createDB = () =>

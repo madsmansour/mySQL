@@ -2,10 +2,10 @@ var mysql = require('mysql2');
 var settings = require('./settings')
 
 var con = mysql.createConnection({
-  host = settings.host,
-  user = settings.user,
-  password = settings.password,
-  database = settings.database
+  "host": settings.host,
+  "user": settings.user,
+  "password": settings.password,
+  "database": settings.database
 });
 
 createTable = () => {
@@ -19,4 +19,4 @@ con.connect(function(err) {
   });
 });
 }
-module.exports = creatTable;
+module.exports = createTable;

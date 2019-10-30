@@ -3,10 +3,9 @@ var settings = require('./settings')
 
 
 var con = mysql.createConnection({
-  host = settings.host,
-  user = settings.user,
-  password = settings.password,
-  database = settings.database
+  "host": settings.host,
+  "user": settings.user,
+  "password": settings.password,
 });
 
 insert = () => {
