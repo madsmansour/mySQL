@@ -8,7 +8,7 @@ async function f() {
 
     let promise1 = new Promise((resolve, reject) => {
         createDB();
-        setTimeout(() => resolve("done1!"), 1000)
+        setTimeout(() => resolve("done1!"), 2000)
     });
 
     let promise2 = new Promise((resolve, reject) => {
@@ -18,7 +18,7 @@ async function f() {
 
     let promise3 = new Promise((resolve, reject) => {
         insert();
-        setTimeout(() => resolve("done3!"), 3000)
+        setTimeout(() => resolve("done3!"), 10000)
     });
 
 
