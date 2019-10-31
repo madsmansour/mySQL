@@ -15,13 +15,13 @@ con.connect(function(err) {
   });
 });
 
-var select = document.getElementById("select");  
+var textarea = document.getElementById("select");  
     
 for(var i = 0; i < con.query.length; i++) {
     var opt = con.query[i];
     var el = document.createElement("query");
     el.textContent = opt;
     el.value = opt;
-    select.appendChild(el);
+    select.appendChild(textarea);
 }
 
