@@ -2,7 +2,7 @@
 
 **en mySQL demo.**
 
-*Ændre settings.js til dine egne mySQL indstillinger
+*Ændre settings.js til dine egne mySQL indstillinger*
 
 *Kør programmet ved at eksekvere følgende to kommandoer:*
 
