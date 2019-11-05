@@ -1,8 +1,21 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+table {
+  border: 1px black solid; 
+  width: 80vw;
+  border-collapse: collapse;
+  
 }
 
-a {
-  color: #00B7FF;
+tr {
+  border: 1px red solid;
+  background-size: 120px;
+  height: 80px;
+  color: black;
+  /*background-image: url('https://scontent-ams4-1.xx.fbcdn.net/v/t31.0-1/c97.165.864.864a/s320x320/19401809_752184371619788_2424657383556637539_o.jpg?_nc_cat=102&_nc_oc=AQm2_eJqJFovgh8A3I3A8x57XPIhQnqykkdgcoyLnR8NoBFMwyq5Ggno9tOBWOeLp1c&_nc_ht=scontent-ams4-1.xx&oh=4edbdcbe8069bdb2436697b47e9a156a&oe=5E2B21F4'); */
+  
+}
+
+td {
+    border: 1px black solid; 
+  font-size: 24px;
+  padding-left: 10px;
 }
