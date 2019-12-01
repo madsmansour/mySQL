@@ -8,10 +8,12 @@ let log = console.log;
 let db_navn=settings.extra.database;
 let table_navn=settings.extra.table;
 
-/* GET home page. */
+/* GET home page. */ 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Forsiden' });
 });
+
+// så når man er på rooten - i det her tilfælde index , laves en ny route som hedder createdatabase, der opretter databasen med nedenstående queries
 
 router.get('/createdatabase',function(req,res,next) {
   var con = mysql.createConnection(settings.settings);
@@ -63,6 +65,8 @@ router.get('/createdatabase',function(req,res,next) {
         res.end();
       });
   })
+
+  // en ny router, når det bliver sendt en get request på root/showdata udføres følgende:
 
   router.get('/showdata',function(req,res,next) {
     var config = settings.settings;

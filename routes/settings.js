@@ -1,7 +1,9 @@
+// en settings fil hvor database information skal udfyldes
+
 const settings = {
-    host: "192.168.99.101",
+    host: "localhost",
     user: "root",
-    password: "mads",
+    password: "",
 };
 
 const extra = {
