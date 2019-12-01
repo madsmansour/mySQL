@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// Her deklareres en ny variabel for hver route der skal vises, og bruges længere nede med app.use
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var databaseRouter = require('./routes/database')
